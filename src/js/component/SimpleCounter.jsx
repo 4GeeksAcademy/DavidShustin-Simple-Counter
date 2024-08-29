@@ -1,5 +1,5 @@
 import React from "react";
-import {PropTypes} from "prop-types";
+import { PropTypes } from "prop-types";
 
 
 function SimpleCounter(props) {
@@ -7,7 +7,7 @@ function SimpleCounter(props) {
         <>
             <div className="counter-display">
                 <div className="class-img">
-                    <FontAwesomeIcon icon="fa-regular fa-clock" />
+                    <i className="fa-regular fa-clock" />
                 </div>
                 <div className="seconds hundredThousands">{props.hundredThousandsDigit}</div>
                 <div className="seconds tenThousands">{props.tenThousandsDigit}</div>
@@ -22,12 +22,12 @@ function SimpleCounter(props) {
 
 
 SimpleCounter.propTypes = {
-    hundredThousandsDigit : PropTypes.number,
-    tenThousandsDigit : PropTypes.number,
-    thousandsDigit : PropTypes.number,
-    hundredsDigit : PropTypes.number,
-    tensDigit : PropTypes.number,
-    onesDigit : PropTypes.number,
+    hundredThousandsDigit: PropTypes.number,
+    tenThousandsDigit: PropTypes.number,
+    thousandsDigit: PropTypes.number,
+    hundredsDigit: PropTypes.number,
+    tensDigit: PropTypes.number,
+    onesDigit: PropTypes.number,
 };
 
 export default SimpleCounter

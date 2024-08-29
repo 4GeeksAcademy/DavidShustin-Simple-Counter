@@ -6,12 +6,16 @@ import calculateSeconds from "../calculateSeconds";
 //create your first component
 const Home = () => {
 	const [counter, setCounter] = useState(0)
-	let interval =
-	interval = setInterval(() => {
-		setCounter(prevCounter =>
-			prevCounter + 1)
-	}, 1000)
-	return () => clearInterval(interval);
+	useEffect(() => {
+		let interval;
+		interval = setInterval(() => {
+			setCounter(prevCounter =>
+				prevCounter + 1)
+
+		}, 1000)
+		return () => clearInterval(interval);
+	})
+
 	return (
 		<>
 			<SimpleCounter
